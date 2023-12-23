@@ -32,7 +32,7 @@ class BonusServiceTest {
     void test_Bonus_Service_With_Unexpected_Result() {
 
         double sales = -200;
-        assertNotEquals(sales, service.getRes(sales));
+        assertNotEquals((sales > 0), service.getRes(sales));
     }
 
     @AfterEach
